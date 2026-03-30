@@ -802,11 +802,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Eyebrow — texto pequeño sobre el título */
 .hero__eyebrow {
   font-family: var(--fuenteAcento);
-  font-size: var(--textoSm);
-  font-weight: var(--pesoNormal);
+  font-size: var(--textoMd);
+  font-weight: var(--pesoBold);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--colorAcento);
+  color: var(--colorTexto);
   margin-bottom: var(--espacio4);
 
   /* Línea decorativa antes del texto */
@@ -820,7 +820,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   width: 32px;
   height: 1px;
-  background-color: var(--colorAcento);
+  background-color: var(--colorTexto);
   flex-shrink: 0;
 }
 
