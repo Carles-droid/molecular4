@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- =============================================
+       META TAGS ESENCIALES
+  ================================================= -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Molecular Solutions — Insumos de laboratorio para instituciones universitarias e industria científica. Calidad, confianza y respaldo técnico." />
+  <meta name="author" content="Tu Nombre" />
+
+  <!-- Open Graph (para compartir en redes sociales) -->
+  <meta property="og:title" content="Molecular Solutions" />
+  <meta property="og:description" content="Insumos de laboratorio de alta calidad." />
+  <meta property="og:image" content="assets/img/og-cover.webp" />
+  <meta property="og:type" content="website" />
+
+  <title>Molecular Solutions | Insumos de Laboratorio</title>
+
+  <!-- =============================================
+       NORMALIZE CSS (siempre primero)
+  ================================================= -->
+  <link rel="stylesheet" href="css/normalize.css" />
+
+  <!-- =============================================
+       GOOGLE FONTS
+       Montserrat: títulos y nav
+       Inter: cuerpo de texto
+       Raleway: acentos y hero
+  ================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&family=Raleway:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+
+  <!-- =============================================
+       ESTILOS PROPIOS (siempre al final del head)
+  ================================================= -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Favicon (puedes usar tu logo .svg directamente) -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logos/favIcon.svg" />
+</head>
+
+<body>
+
+  <!-- =============================================
+       HEADER
+       - Logo .svg
+       - Nav con links de sección
+       - Botón hamburguesa para móvil
+  ================================================= -->
+  <header class="header" id="header">
+    <div class="header__container">
+
+      <!-- Logo -->
+      <a href="#inicio" class="header__logo" aria-label="Molecular Solutions - Inicio">
+        <img src="assets/icons/logos/logoMolecular.svg" alt="Molecular Solutions" width="180" height="48" />
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio"    class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="#productos"  class="nav__link">Productos</a></li>
+          <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li class="nav__item"><a href="#clientes" class="nav__link">Clientes</a></li>
+          <li class="nav__item"><a href="#contacto"  class="nav__link nav__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botón hamburguesa (solo visible en móvil) -->
+      <button
+        class="nav__toggle"
+        id="navToggle"
+        aria-controls="nav"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <!-- Las 3 líneas del ícono hamburguesa en CSS puro -->
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- aquí irá el <main> en el próximo paso -->
+    <main id="main">
+
+        <!-- =============================================
+            HERO SLIDER
+            4 slides con imagen de fondo, texto y CTA
+        ================================================= -->
+        <section class="hero" id="inicio" aria-label="Slider principal">
+
+            <div class="hero__slides">
+
+                <!-- Slide 1 → CTA a Productos -->
+                <div class="hero__slide hero__slide--active" role="group" aria-label="Slide 1 de 4">
+                <img src="assets/img/hero/hero01.webp" alt="Equipos de laboratorio de alta precisión" class="hero__img" />
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Insumos de laboratorio</p>
+                    <h1 class="hero__title">Equipos e insumos<br/>para tu laboratorio</h1>
+                    <p class="hero__subtitle">Calidad, respaldo técnico y entrega en CDMX y área metropolitana.</p>
+                    <a href="#productos" class="btn btn--primary">Ver productos</a>
+                </div>
+                </div>
+
+                <!-- Slide 2 → CTA a Nosotros -->
+                <div class="hero__slide" role="group" aria-label="Slide 2 de 4">
+                <img src="assets/img/hero/hero02.webp" alt="Reactivos y soluciones químicas certificadas" class="hero__img" />
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Reactivos certificados</p>
+                    <h1 class="hero__title">Reactivos y soluciones<br/>de alta pureza</h1>
+                    <p class="hero__subtitle">Empresa mexicana comprometida con la ciencia y la investigación desde CDMX.</p>
+                    <a href="#nosotros" class="btn btn--primary">Conoce Molecular Solutions</a>
+                </div>
+                </div>
+
+                <!-- Slide 3 → CTA a Productos -->
+                <div class="hero__slide" role="group" aria-label="Slide 3 de 4">
+                <img src="assets/img/hero/hero03.webp" alt="Equipos de protección personal para laboratorio" class="hero__img" />
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Seguridad en el laboratorio</p>
+                    <h1 class="hero__title">Equipos de protección<br/>y seguridad</h1>
+                    <p class="hero__subtitle">Cumple con los estándares internacionales con nuestro catálogo especializado.</p>
+                    <a href="#productos" class="btn btn--primary">Ver productos</a>
+                </div>
+                </div>
+
+                <!-- Slide 4 → CTA a Clientes -->
+                <div class="hero__slide" role="group" aria-label="Slide 4 de 4">
+                <img src="assets/img/hero/hero04.webp" alt="Vidriería y material de laboratorio" class="hero__img" />
+                <div class="hero__overlay"></div>
+                <div class="hero__content">
+                    <p class="hero__eyebrow">Empresas e instituciones</p>
+                    <h1 class="hero__title">Proveedores de confianza<br/>para tu institución</h1>
+                    <p class="hero__subtitle">Universidades, centros de investigación y empresas en CDMX ya confían en nosotros.</p>
+                    <a href="#clientes" class="btn btn--primary">Ver nuestros clientes</a>
+                </div>
+                </div>
+
+            </div><!-- /.hero__slides -->
+
+            <!-- Controles del slider -->
+            <button class="hero__arrow hero__arrow--prev" id="heroPrev" aria-label="Slide anterior">&#8592;</button>
+            <button class="hero__arrow hero__arrow--next" id="heroNext" aria-label="Slide siguiente">&#8594;</button>
+
+            <!-- Indicadores (dots) -->
+            <div class="hero__dots" role="tablist" aria-label="Indicadores de slide">
+                <button class="hero__dot hero__dot--active" role="tab" aria-label="Ir al slide 1" data-index="0"></button>
+                <button class="hero__dot" role="tab" aria-label="Ir al slide 2" data-index="1"></button>
+                <button class="hero__dot" role="tab" aria-label="Ir al slide 3" data-index="2"></button>
+                <button class="hero__dot" role="tab" aria-label="Ir al slide 4" data-index="3"></button>
+            </div>
+
+        </section><!-- /.hero -->
+
+        <!-- =============================================
+            PRODUCTOS
+            Grid de 6 cards escalable
+            Estructura: img, título, descripción, CTA
+        ================================================= -->
+        <section class="products" id="productos" aria-label="Productos">
+            <div class="products__container">
+
+            <!-- Encabezado de sección -->
+            <div class="section__header">
+                <span class="section__eyebrow">Catálogo</span>
+                <h2 class="section__title">Nuestros Productos</h2>
+                <p class="section__description">
+                Contamos con un amplio catálogo de insumos, equipos y material de laboratorio para cubrir las necesidades de tu institución o empresa en CDMX y área metropolitana. Encuentra la categoría que necesitas y solicita tu cotización personalizada.
+                </p>
+            </div>
+
+            <!-- Grid de cards -->
+            <div class="products__grid">
+
+                <!-- Card 1 — Vidriería -->
+                <article class="product-card">
+                <div class="product-card__img-wrapper">
+                    <img
+                    src="assets/vidriería.png"
+                    alt="Vidriería de laboratorio"
+                    class="product-card__img"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Vidriería</h3>
+                    <p class="product-card__description">
+                    Beakers, matraces, probetas, buretas y tubos de ensayo de borosilicato para cada proceso analítico.
+                    </p>
+                    <a href="#contacto" class="btn btn--outline">Solicitar cotización</a>
+                </div>
+                </article>
+
+                <!-- Card 2 — Básculas y Balanzas -->
+                <article class="product-card">
+                <div class="product-card__img-wrapper">
+                    <img
+                    src="assets/balanzas.png"
+                    alt="Básculas y balanzas de precisión"
+                    class="product-card__img"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Básculas y Balanzas</h3>
+                    <p class="product-card__description">
+                    Balanzas analíticas y semimicro de alta precisión para uso industrial y científico con trazabilidad garantizada.
+                    </p>
+                    <a href="#contacto" class="btn btn--outline">Solicitar cotización</a>
+                </div>
+                </article>
+
+                <!-- Card 3 — Reactivos -->
+                <article class="product-card">
+                <div class="product-card__img-wrapper">
+                    <img
+                    src="assets/reactivos.png"
+                    alt="Reactivos químicos certificados"
+                    class="product-card__img"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Reactivos</h3>
+                    <p class="product-card__description">
+                    Reactivos grado analítico, grado reactivo y grado HPLC para investigación, síntesis química y control de calidad.
+                    </p>
+                    <a href="#contacto" class="btn btn--outline">Solicitar cotización</a>
+                </div>
+                </article>
+
+                <!-- Card 4 — Equipos de Medición -->
+                <article class="product-card">
+                <div class="product-card__img-wrapper">
+                    <img
+                    src="assets/img/products/medicion.webp"
+                    alt="Equipos de medición y análisis"
+                    class="product-card__img"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Equipos de Medición</h3>
+                    <p class="product-card__description">
+                    pHmetros, conductímetros, espectrofotómetros y termómetros calibrados para mediciones de alta confiabilidad.
+                    </p>
+                    <a href="#contacto" class="btn btn--outline">Solicitar cotización</a>
+                </div>
+                </article>
+
+                <!-- Card 5 — Protección Personal -->
+                <article class="product-card">
+                <div class="product-card__img-wrapper">
+                    <img
+                    src="assets/img/products/proteccion.webp"
+                    alt="Equipos de protección personal"
+                    class="product-card__img"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Protección Personal</h3>
+                    <p class="product-card__description">
+                    Guantes de nitrilo y látex, batas, lentes de seguridad y mascarillas para el trabajo seguro en laboratorio.
+                    </p>
+                    <a href="#contacto" class="btn btn--outline">Solicitar cotización</a>
+                </div>
+                </article>
+
+                <!-- Card 6 — Consumibles -->
+                <article class="product-card">
+                <div class="product-card__img-wrapper">
+                    <img
+                    src="assets/img/products/consumibles.webp"
+                    alt="Consumibles de laboratorio"
+                    class="product-card__img"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="product-card__body">
+                    <h3 class="product-card__title">Consumibles</h3>
+                    <p class="product-card__description">
+                    Puntas para micropipeta, tubos Eppendorf, placas de Petri, papel filtro y desechables para rutina diaria.
+                    </p>
+                    <a href="#contacto" class="btn btn--outline">Solicitar cotización</a>
+                </div>
+                </article>
+
+            </div><!-- /.products__grid -->
+
+            <!-- CTA final de sección -->
+            <div class="products__cta">
+                <a href="#contacto" class="btn btn--primary">Solicitar catálogo completo</a>
+            </div>
+
+            </div>
+        </section><!-- /.products -->
+
+        <!-- =============================================
+       NOSOTROS
+       Texto principal + cards Misión y Visión
+       con imagen de fondo
+        ================================================= -->
+        <section class="about" id="nosotros" aria-label="Nosotros">
+            <div class="about__container">
+
+                <!-- Eyebrow centrado sobre toda la sección -->
+                <div class="about__eyebrow-wrapper">
+                    <span class="section__eyebrow">Quiénes somos</span>
+                </div>
+
+                <!-- Bloque intro: imagen izq + texto der -->
+                <div class="about__intro">
+
+                    <div class="about__intro-img-wrapper">
+                    <img
+                        src="assets/img/nosotros/nosotros.webp"
+                        alt="Equipo Molecular Solutions en laboratorio"
+                        class="about__intro-img"
+                        loading="lazy"
+                    />
+                    </div>
+
+                    <div class="about__intro-text">
+                    <!-- eyebrow ya no va aquí -->
+                    <h2 class="section__title">Ciencia que <em>impulsa</em><br/>tu investigación</h2>
+                    <p class="about__description">
+                        Molecular Solutions es una empresa mexicana fundada en la Ciudad de México con una misión clara: democratizar el acceso a insumos de laboratorio de calidad para instituciones educativas y centros de investigación en todo el país. 
+                    </p>
+                    <p class="about__description">
+                        Somos un equipo joven y apasionado por la ciencia, comprometido con ofrecer productos certificados, atención personalizada y tiempos de entrega competitivos. Aunque somos nuevos en el mercado, respaldamos cada venta con asesoría técnica especializada y un servicio postventa que nos distingue. 
+                    </p>
+                    </div>
+
+                </div><!-- /.about__intro -->
+
+                <!-- Imagen principal + cards Misión y Visión -->
+                <div class="about__visual">
+
+                    <!-- Card Misión -->
+                    <div class="about__card" role="region" aria-label="Misión de Molecular Solutions">
+                    <img
+                        src="assets/img/nosotros/mision1.webp"
+                        alt="Equipo de laboratorio trabajando"
+                        class="about__card-img"
+                        loading="lazy"
+                    />
+                    <div class="about__card-overlay">
+                        <h3 class="about__card-title">Misión</h3>
+                        <p class="about__card-text">
+                        Proveer a laboratorios, universidades y centros de investigación de la Ciudad de México y del país, insumos y equipamiento de calidad certificada, acompañados de asesoría técnica honesta y un servicio ágil. Creemos que el acceso a materiales confiables no debe ser un obstáculo para quienes hacen ciencia: nuestra labor es que cada institución, grande o pequeña, cuente con lo que necesita para trabajar con precisión y seguridad. 
+                        </p>
+                    </div>
+                    </div>
+
+                    <!-- Card Visión -->
+                    <div class="about__card" role="region" aria-label="Visión de Molecular Solutions">
+                    <img
+                        src="assets/img/nosotros/vision1.webp"
+                        alt="Laboratorio de investigación moderno"
+                        class="about__card-img"
+                        loading="lazy"
+                    />
+                    <div class="about__card-overlay">
+                        <h3 class="about__card-title">Visión</h3>
+                        <p class="about__card-text">
+                        Convertirnos en el proveedor de referencia para la comunidad científica y educativa de México, reconocidos por la confianza que generamos en cada transacción, la calidad de los productos que distribuimos y la velocidad con la que respondemos a las necesidades de nuestros clientes. En cinco años, queremos que ningún laboratorio en el país tenga que frenar su trabajo por falta de insumos. 
+                        </p>
+                    </div>
+                    </div>
+
+                </div><!-- /.about__visual -->
+
+            </div>
+        </section><!-- /.about -->
+
+        <!-- =============================================
+            CLIENTES
+            Carrusel infinito de logos .svg
+            Escalable: agregar items en ambos grupos
+        ================================================= -->
+        
+        <!-- =============================================
+       CLIENTES
+       Carrusel infinito de logos .svg
+       Escalable: agregar items en ambos grupos
+       ================================================= -->
+        <section class="clients" id="clientes"          
+            aria-label="Nuestros clientes">
+            <div class="clients__container">
+
+                <!-- Encabezado de sección -->
+                <div class="section__header">
+                    <span class="section__eyebrow">Confianza</span>
+                    <h2 class="section__title">Instituciones que confían<br/>en nosotros</h2>
+                </div>
+
+                <!-- 
+                    CARRUSEL INFINITO
+                    Técnica: se duplica el grupo de logos para crear
+                    el efecto de loop continuo con CSS animation.
+                    Para escalar: agregar el mismo <div class="clients__logo-item">
+                    en AMBOS grupos (original y duplicado) manteniendo
+                    el mismo orden.
+                -->
+                <div class="clients__track-wrapper">
+
+                    <div class="clients__track">
+
+                    <!-- ── Grupo original ── -->
+                    <div class="clients__group" aria-label="Logos de clientes">
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/centroCienciasGenomicas.svg" alt="Centro de Ciencias Genómicas" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/fesIztacala.svg" alt="FES Iztacala UNAM" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/institutoBiologia.svg" alt="Instituto de Biología UNAM" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/institutoFisiologiaCelular.svg" alt="Instituto de Fisiología Celular UNAM" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/institutoInvestigacionesBiomedicas.svg" alt="Instituto de Investigaciones Biomédicas" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/uamCuajimalpa.svg" alt="UAM Cuajimalpa" loading="lazy" />
+                        </div>
+
+                    </div><!-- /.clients__group (original) -->
+
+                    <!-- ── Grupo duplicado para el loop ── -->
+                    <div class="clients__group" aria-hidden="true">
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/centroCienciasGenomicas.svg" alt="" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/fesIztacala.svg" alt="" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/institutoBiologia.svg" alt="" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/institutoFisiologiaCelular.svg" alt="" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/institutoInvestigacionesBiomedicas.svg" alt="" loading="lazy" />
+                        </div>
+
+                        <div class="clients__logo-item">
+                        <img src="assets/icons/clientes/uamCuajimalpa.svg" alt="" loading="lazy" />
+                        </div>
+
+                    </div><!-- /.clients__group (duplicado) -->
+
+                    </div><!-- /.clients__track -->
+
+                </div><!-- /.clients__track-wrapper -->
+
+            </div>
+        </section><!-- /.clients -->
+          
+
+
+    </main>
+
+    <!-- =============================================
+       FOOTER
+       3 columnas: Logo + info | Nav | Contacto + redes
+       id="contacto" para los CTAs del sitio
+    ================================================= -->
+    <footer class="footer" id="contacto">
+
+        <div class="footer__container">
+
+        <!-- ── Columna 1: Logo + descripción ── -->
+        <div class="footer__col footer__col--brand">
+
+            <a href="#inicio" class="footer__logo" aria-label="Molecular Solutions - Ir al inicio">
+            <img src="assets/icons/logos/logoMolecular.svg" alt="Molecular Solutions" width="160" height="44" />
+            </a>
+
+            <p class="footer__tagline">
+            Insumos y equipos de laboratorio para instituciones universitarias y empresas científicas en CDMX y área metropolitana.
+            </p>
+
+        </div><!-- /.footer__col--brand -->
+
+        <!-- ── Columna 2: Navegación ── -->
+        <div class="footer__col footer__col--nav">
+
+            <h3 class="footer__heading">Navegación</h3>
+
+            <ul class="footer__nav-list">
+            <li><a href="#inicio"     class="footer__nav-link">Inicio</a></li>
+            <li><a href="#productos"  class="footer__nav-link">Productos</a></li>
+            <li><a href="#nosotros"   class="footer__nav-link">Nosotros</a></li>
+            <li><a href="#clientes"   class="footer__nav-link">Clientes</a></li>
+            </ul>
+
+        </div><!-- /.footer__col--nav -->
+
+        <!-- ── Columna 3: Contacto + redes sociales ── -->
+        <div class="footer__col footer__col--contact">
+
+            <h3 class="footer__heading">Contacto</h3>
+
+            <ul class="footer__contact-list">
+
+            <li class="footer__contact-item">
+                <img src="assets/icons/contacto/phone.svg" alt="" aria-hidden="true" class="footer__contact-icon" />
+                <a href="tel:+525512345678" class="footer__contact-link">+52 55 1234 5678</a>
+            </li>
+
+            <li class="footer__contact-item">
+                <img src="assets/icons/contacto/email.svg" alt="" aria-hidden="true" class="footer__contact-icon" />
+                <a href="mailto:contacto@molecularsolutions.mx" class="footer__contact-link">contacto@molecularsolutions.mx</a>
+            </li>
+
+            <li class="footer__contact-item">
+                <img src="assets/icons/contacto/pin.svg" alt="" aria-hidden="true" class="footer__contact-icon" />
+                <span class="footer__contact-text">Ciudad de México, México</span>
+            </li>
+
+            </ul>
+
+            <!-- Redes sociales -->
+            <div class="footer__social">
+
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Molecular Solutions">
+                <img src="assets/icons/contacto/facebook.svg" alt="" aria-hidden="true" class="footer__social-icon" />
+            </a>
+
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Molecular Solutions">
+                <img src="assets/icons/contacto/instagram.svg" alt="" aria-hidden="true" class="footer__social-icon" />
+            </a>
+
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Molecular Solutions">
+                <img src="assets/icons/contacto/linkedin.svg" alt="" aria-hidden="true" class="footer__social-icon" />
+            </a>
+
+            <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) de Molecular Solutions">
+                <img src="assets/icons/contacto/x.svg" alt="" aria-hidden="true" class="footer__social-icon" />
+            </a>
+
+            </div><!-- /.footer__social -->
+
+        </div><!-- /.footer__col--contact -->
+
+        </div><!-- /.footer__container -->
+
+        <!-- ── Barra inferior: créditos y copyright ── -->
+        <div class="footer__bottom">
+        <p class="footer__copyright">
+            &copy; <span id="currentYear"></span> Molecular Solutions. Todos los derechos reservados.
+        </p>
+        <p class="footer__dev">
+            Desarrollado por <a href="#" class="footer__dev-link" target="_blank" rel="noopener noreferrer">Insomne</a>
+        </p>
+        </div><!-- /.footer__bottom -->
+
+    </footer>
+
+        <!-- =============================================
+        BOTÓN FLOTANTE WHATSAPP
+        Posición fija, esquina inferior derecha
+        El mensaje está pre-escrito para agilizar
+        el contacto del visitante
+    ================================================= -->
+    <a
+        href="https://wa.me/525512345678?text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20productos%20e%20insumos%20de%20laboratorio."
+        class="whatsapp-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Contactar a Molecular Solutions por WhatsApp"
+    >
+        <img src="assets/icons/contacto/whatsapp.svg" alt="" aria-hidden="true" class="whatsapp-btn__icon" />
+        <span class="whatsapp-btn__tooltip">¡Escríbenos!</span>
+    </a>
+
+  <!-- JS al final del body, siempre -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
