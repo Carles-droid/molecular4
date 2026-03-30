@@ -1435,6 +1435,7 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Línea decorativa sobre el título */
   padding-top: var(--espacio4);
+  padding-bottom: var(--espacio3);
   border-bottom: 2px solid var(--colorAcento);
   width: auto;
 }
@@ -1730,7 +1731,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: var(--anchoContenedor);
   margin-inline: auto;
   padding-inline: var(--paddingContenedor);
-  padding-block: var(--espacio16) var(--espacio12);
+  padding-block: var(--espacio10) var(--espacio6);
 
   display: grid;
   grid-template-columns: 1.6fr 1fr 1.4fr;  /* Brand más ancho, nav más estrecho */
@@ -1763,16 +1764,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__logo:hover img {
   opacity: 0.8;
-}
-
-.footer__tagline {
-  font-family: var(--fuenteSecundaria);
-  font-size: var(--textoSm);
-  font-weight: var(--pesoNormal);
-  line-height: var(--lineaRelaxed);
-  color: rgba(255, 255, 255, 0.60);
-  max-width: 300px;
-  text-align: center;
 }
 
 /* ------------------------------------------
