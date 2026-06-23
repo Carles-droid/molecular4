@@ -5,6 +5,7 @@
   <!-- =============================================
        META TAGS ESENCIALES
   ================================================= -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Molecular Solutions — Insumos de laboratorio para instituciones universitarias e industria científica. Calidad, confianza y respaldo técnico." />
@@ -13,8 +14,17 @@
   <!-- Open Graph (para compartir en redes sociales) -->
   <meta property="og:title" content="Molecular Solutions" />
   <meta property="og:description" content="Insumos de laboratorio de alta calidad." />
-  <meta property="og:image" content="assets/img/og-cover.webp" />
+  <meta property="og:image" content="https://molecularsolutionsclaro.netlify.app/assets/img/pavo.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://molecularsolutionsclaro.netlify.app/" />
   <meta property="og:type" content="website" />
+
+  <!-- Twitter Card (algunas redes usan este formato en lugar de Open Graph) -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Molecular Solutions" />
+  <meta name="twitter:description" content="Insumos de laboratorio de alta calidad." />
+  <meta name="twitter:image" content="https://molecularsolutionsclaro.netlify.app/assets/img/pavo.jpg" />
 
   <title>Molecular Solutions | Insumos de Laboratorio</title>
 
@@ -55,7 +65,7 @@
 
       <!-- Logo -->
       <a href="#inicio" class="header__logo" aria-label="Molecular Solutions - Inicio">
-        <img src="assets/icons/logos/logoMolecular.svg" alt="Molecular Solutions" width="180" height="48" />
+        <img src="assets/icons/logos/logoMolecularBlanco.svg" alt="Molecular Solutions" width="180" height="48" />
       </a>
 
       <!-- Navegación principal -->
@@ -63,6 +73,7 @@
         <ul class="nav__list">
           <li class="nav__item"><a href="#inicio"    class="nav__link">Inicio</a></li>
           <li class="nav__item"><a href="#productos"  class="nav__link">Productos</a></li>
+          <li class="nav__item"><a href="#catalogos" class="nav__link">Catálogos</a></li>
           <li class="nav__item"><a href="#nosotros" class="nav__link">Nosotros</a></li>
           <li class="nav__item"><a href="#clientes" class="nav__link">Clientes</a></li>
           <li class="nav__item"><a href="#contacto"  class="nav__link nav__link--cta">Contacto</a></li>
@@ -306,6 +317,136 @@
         </section><!-- /.products -->
 
         <!-- =============================================
+            CATÁLOGOS
+            Grid de catálogos PDF por proveedor/laboratorio
+            Estructura: logo, nombre, acciones (ver / descargar)
+        ================================================= -->
+        <section class="catalogs" id="catalogos" aria-label="Catálogos de proveedores">
+            <div class="catalogs__container">
+
+            <!-- Encabezado de sección -->
+            <div class="section__header">
+                <span class="section__eyebrow">Documentos técnicos</span>
+                <h2 class="section__title">Catálogos de <em>nuestros</em><br/>proveedores</h2>
+                <p class="section__description">
+                Consulta o descarga el catálogo completo de cada uno de los laboratorios y proveedores con los que trabajamos. Encuentra especificaciones técnicas, presentaciones y referencias de producto.
+                </p>
+            </div>
+
+            <!-- Grid de catálogos -->
+            <div class="catalogs__grid">
+
+                <!-- Catálogo 1 — AB CLONAL -->
+                <article class="catalog-card">
+                <div class="catalog-card__logo-wrapper">
+                    <img
+                    src="assets/icons/logos-catalogos/abclonal.svg"
+                    alt="AB CLONAL"
+                    class="catalog-card__logo"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">AB CLONAL</h3>
+                    <div class="catalog-card__actions">
+                    <a href="assets/catalogos/ab-clonal.pdf" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                    <a href="assets/catalogos/ab-clonal.pdf" class="catalog-card__download" download aria-label="Descargar catálogo AB CLONAL">
+                        <img src="assets/icons/contacto/download.svg" alt="" aria-hidden="true" />
+                    </a>
+                    </div>
+                </div>
+                </article>
+
+                <!-- Catálogo 2 — Capricorn Scientific -->
+                <article class="catalog-card">
+                <div class="catalog-card__logo-wrapper">
+                    <img
+                    src="assets/icons/logos-catalogos/CapricornScientific.svg"
+                    alt="Capricorn Scientific"
+                    class="catalog-card__logo"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">Capricorn Scientific</h3>
+                    <div class="catalog-card__actions">
+                    <a href="assets/catalogos/capricorn-scientific.pdf" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                    <a href="assets/catalogos/capricorn-scientific.pdf" class="catalog-card__download" download aria-label="Descargar catálogo Capricorn Scientific">
+                        <img src="assets/icons/contacto/download.svg" alt="" aria-hidden="true" />
+                    </a>
+                    </div>
+                </div>
+                </article>
+
+                <!-- Catálogo 3 — CELL PRO Bio -->
+                <article class="catalog-card">
+                <div class="catalog-card__logo-wrapper">
+                    <img
+                    src="assets/icons/logos-catalogos/cellpro.svg"
+                    alt="CELL PRO Bio"
+                    class="catalog-card__logo"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">CELL PRO Bio</h3>
+                    <div class="catalog-card__actions">
+                    <a href="assets/catalogos/cell-pro-bio.pdf" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                    <a href="assets/catalogos/cell-pro-bio.pdf" class="catalog-card__download" download aria-label="Descargar catálogo CELL PRO Bio">
+                        <img src="assets/icons/contacto/download.svg" alt="" aria-hidden="true" />
+                    </a>
+                    </div>
+                </div>
+                </article>
+
+                <!-- Catálogo 4 — JOANLAB -->
+                <article class="catalog-card">
+                <div class="catalog-card__logo-wrapper">
+                    <img
+                    src="assets/icons/logos-catalogos/joanlab.svg"
+                    alt="JOANLAB"
+                    class="catalog-card__logo"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">JOANLAB</h3>
+                    <div class="catalog-card__actions">
+                    <a href="assets/catalogos/joanlab.pdf" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                    <a href="assets/catalogos/joanlab.pdf" class="catalog-card__download" download aria-label="Descargar catálogo JOANLAB">
+                        <img src="assets/icons/contacto/download.svg" alt="" aria-hidden="true" />
+                    </a>
+                    </div>
+                </div>
+                </article>
+
+                <!-- Catálogo 5 — ROCHE Science -->
+                <article class="catalog-card">
+                <div class="catalog-card__logo-wrapper">
+                    <img
+                    src="assets/icons/logos-catalogos/roche.svg"
+                    alt="ROCHE Science"
+                    class="catalog-card__logo"
+                    loading="lazy"
+                    />
+                </div>
+                <div class="catalog-card__body">
+                    <h3 class="catalog-card__title">ROCHE Science</h3>
+                    <div class="catalog-card__actions">
+                    <a href="assets/catalogos/roche-science.pdf" class="btn btn--outline btn--sm" target="_blank" rel="noopener noreferrer">Ver PDF</a>
+                    <a href="assets/catalogos/roche-science.pdf" class="catalog-card__download" download aria-label="Descargar catálogo ROCHE Science">
+                        <img src="assets/icons/contacto/download.svg" alt="" aria-hidden="true" />
+                    </a>
+                    </div>
+                </div>
+                </article>
+
+            </div><!-- /.catalogs__grid -->
+
+            </div>
+        </section><!-- /.catalogs -->
+
+        <!-- =============================================
        NOSOTROS
        Texto principal + cards Misión y Visión
        con imagen de fondo
@@ -506,6 +647,7 @@
             <ul class="footer__nav-list">
             <li><a href="#inicio"     class="footer__nav-link">Inicio</a></li>
             <li><a href="#productos"  class="footer__nav-link">Productos</a></li>
+            <li><a href="#catalogos"  class="footer__nav-link">Catálogos</a></li>
             <li><a href="#nosotros"   class="footer__nav-link">Nosotros</a></li>
             <li><a href="#clientes"   class="footer__nav-link">Clientes</a></li>
             </ul>

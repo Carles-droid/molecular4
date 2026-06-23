@@ -372,6 +372,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--sombraSm);
 }
 
+/* Variante compacta — para acciones secundarias dentro de cards pequeñas */
+.btn--sm {
+  padding: var(--espacio2) var(--espacio5);
+  font-size: var(--textoXs);
+}
+
 /* ------------------------------------------
    Utilidades de accesibilidad
 ------------------------------------------ */
@@ -1248,6 +1254,203 @@ h1, h2, h3, h4, h5, h6 {
     font-size: var(--textoSm);
   }
 } */
+
+/* =============================================
+   9.5. CATÁLOGOS
+   - Encabezado de sección (mismo patrón que Productos)
+   - Grid de catálogos PDF por proveedor
+   - Card: logo + nombre + acciones (ver / descargar)
+================================================= */
+
+.catalogs {
+  padding-block: var(--espacio24);
+  background-color: var(--colorSuperficie);
+  position: relative;
+  overflow: hidden;
+}
+
+.catalogs__container {
+  position: relative;
+  z-index: var(--zBase);
+  width: 100%;
+  max-width: var(--anchoContenedor);
+  margin-inline: auto;
+  padding-inline: var(--paddingContenedor);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio12);
+}
+
+/* ------------------------------------------
+   Grid de cards de catálogo
+   5 columnas en desktop — se ajusta en responsive
+------------------------------------------ */
+
+.catalogs__grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--espacio6);
+}
+
+/* ------------------------------------------
+   Catalog Card
+------------------------------------------ */
+
+.catalog-card {
+  background-color: var(--colorBlanco);
+  border-radius: var(--radiusMd);
+  overflow: hidden;
+  box-shadow: var(--sombraSm);
+  border: 1px solid var(--colorBorde);
+
+  display: flex;
+  flex-direction: column;
+
+  transition:
+    transform    var(--transicionBase),
+    box-shadow   var(--transicionBase),
+    border-color var(--transicionBase);
+}
+
+.catalog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--sombraLg);
+  border-color: var(--colorAcento);
+}
+
+/* Wrapper del logo */
+.catalog-card__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  padding: var(--espacio6);
+  background-color: var(--colorFondo);
+  border-bottom: 1px solid var(--colorBorde);
+}
+
+.catalog-card__logo {
+  max-width: 100%;
+  max-height: 64px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.75);
+  transition: filter var(--transicionBase);
+}
+
+.catalog-card:hover .catalog-card__logo {
+  filter: grayscale(0%) opacity(1);
+}
+
+/* Body de la card */
+.catalog-card__body {
+  padding: var(--espacio5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--espacio4);
+  flex: 1;
+  text-align: center;
+}
+
+.catalog-card__title {
+  font-family: var(--fuentePrincipal);
+  font-size: var(--textoBase);
+  font-weight: var(--pesoBold);
+  color: var(--colorPrimario);
+}
+
+/* Acciones — botón Ver PDF + ícono Descargar */
+.catalog-card__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--espacio3);
+  margin-top: auto;
+  width: 100%;
+}
+
+.catalog-card__actions .btn--outline {
+  flex: 1;
+}
+
+.catalog-card__download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid var(--colorBorde);
+  transition:
+    background-color var(--transicionBase),
+    border-color      var(--transicionBase),
+    transform         var(--transicionBounce);
+}
+
+.catalog-card__download img {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+  transition: opacity var(--transicionBase);
+}
+
+.catalog-card__download:hover {
+  background-color: var(--colorSecundario);
+  border-color: var(--colorSecundario);
+  transform: translateY(-2px);
+}
+
+.catalog-card__download:hover img {
+  opacity: 1;
+  filter: brightness(0) invert(1);
+}
+
+/* ------------------------------------------
+   Responsive
+------------------------------------------ */
+
+@media (max-width: 1024px) {
+
+  /* 3 columnas en tablet grande */
+  .catalogs__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* 2 columnas en tablet */
+  .catalogs__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--espacio5);
+  }
+}
+
+@media (max-width: 560px) {
+
+  .catalogs {
+    padding-block: var(--espacio16);
+  }
+
+  /* 1 columna en móvil */
+  .catalogs__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-card__actions {
+    flex-direction: column;
+  }
+
+  .catalog-card__download {
+    width: 100%;
+    height: 40px;
+    border-radius: var(--radiusPill);
+  }
+}
 
 /* =============================================
    10. NOSOTROS
