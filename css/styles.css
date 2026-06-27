@@ -1396,13 +1396,15 @@ h1, h2, h3, h4, h5, h6 {
 .catalog-card__download:hover {
   background-color: var(--colorSecundario);
   border-color: var(--colorSecundario);
+  color: var(--colorBlanco);
+  transform: translateY(-2px);
   transform: translateY(-2px);
 }
 
-/* .catalog-card__download:hover img {
+.catalog-card__download:hover svg {
   opacity: 1;
   filter: brightness(0) invert(1);
-} */
+}
 
 .catalog-card__download:hover {
   color: var(--colorBlanco);
@@ -1476,10 +1478,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .catalog-card__download {
-    width: 38px;
+    /* width: 38px;
     height: 38px;
     border-radius: 50%;
-    align-self: center;
+    align-self: center; */
+    flex: none;
+    width: 100%;
   }
 }
 
