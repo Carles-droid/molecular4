@@ -1337,12 +1337,6 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   max-height: 64px;
   object-fit: contain;
-  filter: grayscale(100%) opacity(0.75);
-  transition: filter var(--transicionBase);
-}
-
-.catalog-card:hover .catalog-card__logo {
-  filter: grayscale(0%) opacity(1);
 }
 
 /* Body de la card */
@@ -1384,13 +1378,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: var(--espacio2) var(--espacio5);
   border-radius: var(--radiusPill);
   border: 2px solid var(--colorBorde);
+  color: var(--colorSecundario);
   transition:
     background-color var(--transicionBase),
     border-color      var(--transicionBase),
+    color             var(--transicionBase),
     transform         var(--transicionBounce);
-} 
+}
 
-.catalog-card__download img {
+.catalog-card__download svg {
   width: 16px;
   height: 16px;
   opacity: 0.6;
@@ -1403,9 +1399,17 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
-.catalog-card__download:hover img {
+/* .catalog-card__download:hover img {
   opacity: 1;
   filter: brightness(0) invert(1);
+} */
+
+.catalog-card__download:hover {
+  color: var(--colorBlanco);
+}
+
+.catalog-card__download:hover svg {
+  opacity: 1;
 }
 
 /* ------------------------------------------
