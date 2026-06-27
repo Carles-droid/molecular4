@@ -1945,7 +1945,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__logo img {
   height: auto;
   width: 100%;
-  max-width: 400px; /* limita el tamaño máximo del logo */
+  max-width: 300px; /* limita el tamaño máximo del logo */
   transition: opacity var(--transicionBase);
 }
 
