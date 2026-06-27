@@ -1945,7 +1945,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer__logo img {
   height: auto;
   width: 100%;
-  max-width: 280px; /* limita el tamaño máximo del logo */
+  max-width: 400px; /* limita el tamaño máximo del logo */
   transition: opacity var(--transicionBase);
 }
 
@@ -2189,7 +2189,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .footer__logo img {
     width: auto;             /* ← respeta proporciones del SVG */
-    max-width: 220px;        /* ← tamaño cómodo para móvil     */
+    max-width: 300px;        /* ← tamaño cómodo para móvil     */
   }
 
   .footer__bottom {
