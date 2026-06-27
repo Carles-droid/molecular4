@@ -593,7 +593,7 @@ h1, h2, h3, h4, h5, h6 {
    Panel desplegable desde arriba
 ================================================= */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
   .nav__toggle {
     display: flex;
@@ -1202,7 +1202,7 @@ h1, h2, h3, h4, h5, h6 {
    CTA final de sección
 ------------------------------------------ */
 
-.products__cta {
+/* .products__cta {
   display: flex;
   justify-content: center;
   margin-top: var(--espacio4);
@@ -1211,7 +1211,7 @@ h1, h2, h3, h4, h5, h6 {
 .products__cta .btn--primary {
   padding-inline: var(--espacio16);
   font-size: var(--textoBase);
-}
+} */
 
 
 /* ------------------------------------------
@@ -1473,17 +1473,15 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .catalog-card__actions .btn--outline {
+    align-self: center;
     flex: none;
-    width: 100%;
+    width: 50%;
   }
 
   .catalog-card__download {
-    /* width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    align-self: center; */
+    align-self: center;
     flex: none;
-    width: 100%;
+    width: 50%;
   }
 }
 
